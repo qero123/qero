@@ -18,25 +18,14 @@ class color:
 
 keys = Path("./api.txt")
 logo = color.HEADER + '''
-
-   ███╗   ███╗███████╗███╗   ███╗ ██████╗██████╗  █████╗ ███████╗██╗  ██╗███████╗██████╗ 
-   ████╗ ████║██╔════╝████╗ ████║██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║██╔════╝██╔══██╗
-   ██╔████╔██║█████╗  ██╔████╔██║██║     ██████╔╝███████║███████╗███████║█████╗  ██║  ██║
-   ██║╚██╔╝██║██╔══╝  ██║╚██╔╝██║██║     ██╔══██╗██╔══██║╚════██║██╔══██║██╔══╝  ██║  ██║
-   ██║ ╚═╝ ██║███████╗██║ ╚═╝ ██║╚██████╗██║  ██║██║  ██║███████║██║  ██║███████╗██████╔╝
-   ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═════╝ 
-
-                                        Author: @037
-                                        Version: 4.0
-
-####################################### DISCLAIMER ########################################
-| Memcrashed is a tool that allows you to use Shodan.io to obtain hundreds of vulnerable  |
-| memcached servers. It then allows you to use the same servers to launch widespread      |
-| distributed denial of service attacks by forging UDP packets sourced to your victim.    |
-| Default payload includes the memcached "stats" command, 10 bytes to send, but the reply |
-| is between 1,500 bytes up to hundreds of kilobytes. Please use this tool responsibly.   |
-| I am NOT responsible for any damages caused or any crimes committed by using this tool. |
-###########################################################################################
+           
+                                  ░█████╗░██████╗░██╗████████╗██╗░█████╗░░█████╗░██╗░░░░░
+                                  ██╔══██╗██╔══██╗██║╚══██╔══╝██║██╔══██╗██╔══██╗██║░░░░░
+                                  ██║░░╚═╝██████╔╝██║░░░██║░░░██║██║░░╚═╝███████║██║░░░░░
+                                  ██║░░██╗██╔══██╗██║░░░██║░░░██║██║░░██╗██╔══██║██║░░░░░
+                                  ╚█████╔╝██║░░██║██║░░░██║░░░██║╚█████╔╝██║░░██║███████╗
+                                  ░╚════╝░╚═╝░░╚═╝╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝
+                            
                                                                                       
 '''
 print(logo)
@@ -56,7 +45,7 @@ while True:
     print('')
     try:
         myresults = Path("./bots.txt")
-        query = input("[*] Use Shodan API to search for affected Memcached servers? <Y/n>: ").lower()
+        query = input("[*] Use Shodan API to search for affected Critical servers? <Y/n>: ").lower()
         if query.startswith('y'):
             print('')
             print('[~] Checking Shodan.io API Key: %s' % SHODAN_API_KEY)
